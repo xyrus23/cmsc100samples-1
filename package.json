@@ -16,7 +16,10 @@
     "mysql": "~2.9.0",
     "body-parser": "~1.13.3",
     "method-override": "~2.3.5",
-    "git": "~0.1.5"
+    "git": "~0.1.5",
+    "supertest": "~1.1.0",
+    "should": "~7.1.0",
+    "should-http": "0.0.4"
   },
   "devDependencies": {},
   "repository": {
