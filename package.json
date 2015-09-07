@@ -18,5 +18,12 @@
     "method-override": "~2.3.5",
     "git": "~0.1.5"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kepbautista/cmsc100samples.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kepbautista/cmsc100samples/issues"
+  }
 }
