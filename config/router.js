@@ -9,11 +9,11 @@ module.exports = function (router) {
 	router.route('/degree-programs')
 		.get(degreeProgram.find)
 		.post(degreeProgram.insert)
-		.delete(degreeProgram.remove)
-		.put(degreeProgram.update);
+		.delete(degreeProgram.remove);
 
 	router.route('/degree-programs/:id')
-		.get(degreeProgram.findOne);
+		.get(degreeProgram.findOne)
+		.put(degreeProgram.update);
 
 	return router;
 };

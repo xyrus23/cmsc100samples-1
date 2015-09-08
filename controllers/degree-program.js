@@ -16,7 +16,7 @@ exports.findOne = function (req, res, next) {
 		if(err) return(err);
 		if(rows.length === 0)
 			res.send(404, {message: 'Degree program not found.'});
-		else res.send(rows);
+		else res.send(rows[0]);
 	});
 };
 
@@ -40,7 +40,7 @@ exports.remove = function (req, res, next) {
 
 // Update a degree program.
 exports.update = function (req, res, next) {
-	db.query("UPDATE degree SET total_units='"+req.body.units+"' WHERE degree_id='"+req.body.id+"'", function (err, rows) {
+	db.query("UPDATE degree SET total_units='"+req.body.units+"' WHERE degree_id='"+req.params.id+"'", function (err, rows) {
 		if(err) return(err);
 		if(rows.length === 0)
 			res.send(404, {message: 'Degree program not found.'});
