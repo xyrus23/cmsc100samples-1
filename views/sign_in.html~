@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sign In</title>
+		<meta charset="utf-8"/>
+	</head>
+	<body>
+		<form>
+			<input type="text" placeholder="Username"/><br/>
+			<input type="password" placeholder="Password"/><br/>
+			<input type="checkbox" value="Remember me"/>Remember me<br/>
+			<input type="submit" value="Sign Up"/><br/>
+			<p>Don't have an account? <a href="sign_up.html">Sign up</a></p>
+		</form>
+	</body>
+</html>
