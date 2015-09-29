@@ -47,7 +47,7 @@ exports.update = function(req, res, next){
 				res.send(553, {message: 'Degree program ('+req.params.id+') was not updated.'});
 				} else {
 				res.send(updatedRow);
-				}
+}
 			});
 		});
 };
