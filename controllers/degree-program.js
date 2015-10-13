@@ -20,7 +20,7 @@ exports.findOne = function(req, res, next){
 };
 
 exports.insert = function(req, res, next){
-	db.query("INSERT INTO degree_program(code, name) VALUES(?, ?)", [req.body.code, req.body.name], function(err, row) {
+	db.query("INSERT INTO degree(code, name) VALUES(?, ?)", [req.body.code, req.body.name], function(err, row) {
 		if (err) return next(err);
 			selectOne(row.insertId, function(newRow) {
 			if (!newRow) {
